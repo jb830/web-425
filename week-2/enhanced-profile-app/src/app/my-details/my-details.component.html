@@ -1,0 +1,11 @@
+<h3>Profile</h3>
+<ul class="details">
+  <li class="fs-4">Name: {{myProfile.fullName}}</li>
+  <li class="fs-4">Favorite food: {{myProfile.favoriteFood}}</li>
+  <li class="fs-4">Favorite color: <span>{{myProfile.favoriteColor}}</span></li>
+  <li class="fs-4">
+    <span *ngFor= "let word of myProfile.keyWords">
+      {{word}}
+    </span>
+  </li>
+</ul>

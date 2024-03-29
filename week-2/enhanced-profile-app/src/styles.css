@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap';
+
+html, body {
+  color: rgb(60,75,85);
+  font-weight: 200;
+}
+
+h2, h3 {
+  font-weight: 300;
+}
+.details > li {
+  list-style-type: circle;
+}
+
+li > span {
+  color: rgb(232,157,141);
+}

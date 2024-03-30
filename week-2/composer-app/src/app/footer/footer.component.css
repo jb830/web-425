@@ -1,0 +1,36 @@
+footer {
+  padding: 2rem 2rem 1rem 2rem;
+  background: rgb(51, 51, 51);
+  color: rgb(246, 243, 237);
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-row a,
+.footer-row p {
+  color: rgb(246, 243, 237);
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-col:nth-child(2) {
+  text-align: right;
+}
+
+.social {
+  text-align: center;
+}
+
+.social > a > i {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+}

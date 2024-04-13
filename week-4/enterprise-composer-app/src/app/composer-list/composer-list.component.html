@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let composer of composers;">
+        <tr *ngFor="let composer of composers$ | async">
           <td>
             <a routerLink="/composer-details/{{composer.composerId}}" routerLinkActive="router-link-active">
               {{composer.composerId}}

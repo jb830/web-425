@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eactive-composer-app": {
+    "enterprise-composer-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/eactive-composer-app",
+            "outputPath": "dist/enterprise-composer-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "eactive-composer-app:build:production"
+              "buildTarget": "enterprise-composer-app:build:production"
             },
             "development": {
-              "buildTarget": "eactive-composer-app:build:development"
+              "buildTarget": "enterprise-composer-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "eactive-composer-app:build"
+            "buildTarget": "enterprise-composer-app:build"
           }
         },
         "test": {

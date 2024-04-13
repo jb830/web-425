@@ -14,7 +14,10 @@ import {
   RouterOutlet,
   RouterModule
 } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormsModule,
+  ReactiveFormsModule
+} from '@angular/forms';
 import {
   NavComponent
 } from './nav/nav.component';
@@ -49,5 +52,5 @@ import {
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Exercise 4.3 - Handling Events with Observables ';
+  title = 'Assignment 4.4 - Async Pipe';
 }

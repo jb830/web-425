@@ -22,13 +22,14 @@ import {
 import {
   ReactiveFormsModule
 } from '@angular/forms';
+import { Observable 
+} from 'rxjs';
 import {
   IComposer
 } from '../composer.interface';
 import {
   ComposerService
 } from '../composer.service';
-
 import {
   debounceTime
 } from 'rxjs/operators';
@@ -44,15 +45,15 @@ import {
 export class ComposerListComponent {
 
   txtSearchControl = new FormControl('');
-  composers: Array < IComposer > ;
+  composers$: Observable<IComposer[]>;
 
   constructor(private composerService: ComposerService) {
-    this.composers = this.composerService.getComposers();
+    this.composers$ = this.composerService.getComposers();
 
     //If user inputs value, value change event will call filterComposer functions and create an alert 
     this.txtSearchControl.valueChanges.pipe(debounceTime(500)).subscribe(val => this.filterComposers(val as string));
   }
   filterComposers(name: string) {
-    alert(name);
+    this.composers$ = this.composerService.filterComposers(name);
   }
 }

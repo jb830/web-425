@@ -42,6 +42,8 @@ export class ComposerService {
     }
     return undefined;
   }
+
+  
   filterComposers(name: string): Observable<IComposer[]> {
     return of(this.composers).pipe(map(composers => composers.filter(composer => composer.fullName.toLowerCase().indexOf(name) > -1)))
   }

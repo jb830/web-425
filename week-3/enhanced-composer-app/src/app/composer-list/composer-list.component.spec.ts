@@ -1,5 +1,13 @@
+/*
+============================================
+; Title:  composer-list.component.ts 
+; Author: Professor Krasso
+; Date: 5. April, 2024
+; Modified by: Joanna Brumfield
+; Description: Composer List Component
+;===========================================
+*/
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ComposerListComponent } from './composer-list.component';
 
 describe('ComposerListComponent', () => {

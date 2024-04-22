@@ -1,0 +1,39 @@
+<!-- /*
+============================================
+; Title:  app.component.html 
+; Author: Professor Krasso
+; Date: 19. April, 2024
+; Modified by: Joanna Brumfield
+; Description: component html
+;===========================================
+*/ -->
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src=".././assets/images/In-N-Out books Logo.png" height="80px">
+    </div>
+    <div class="app-links" style="width: 80%">
+      <div fxLayout.sm="row wrap" fxLayoutAlign="end">
+        <button mat-button routerLink="book-list">Book List</button>
+        <button mat-button routerLink="about">About</button>
+        <button mat-button routerLink="contact">Contact</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br>
+
+<div fxLayout="row wrap">
+  <mat-card class="container">
+    <mat-card-title class="blue" [ngStyle]="{'text-align': 'center'}">
+      {{assignment}}
+    </mat-card-title>
+    <br>
+    <br>
+
+    <mat-card-content>
+      <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>
+</div>

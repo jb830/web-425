@@ -1,0 +1,23 @@
+.signin-container {
+  margin-top: 15%;
+  padding: 3rem 1rem;
+  width: 35%;
+  text-align: center;
+}
+mat-card-title {
+  padding-bottom: .75rem;
+  font-size: 2rem;
+}
+.error {
+  margin: 10px;
+  padding: 12px;
+  background-color: #FFD2D2;
+  color: #D8000C;
+}
+
+@media screen and (max-width: 900px) {
+  .signin-container {
+    width: 75%;
+  }
+}
+

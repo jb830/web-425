@@ -1,0 +1,42 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <div fxFlex="49" class="top-margin">
+    <mat-card>
+      <mat-card-title>Grade Entry</mat-card-title>
+      <mat-card-content>
+        <form fxLayout="column" fxLayoutAlign="space-between" [formGroup]="transcriptForm" (ngSubmit)="saveEntry()">
+          <mat-form-field appearance="fill">
+            <mat-label>Course</mat-label>
+            <input type="text" name="txtCourse" required id="txtCourse" matInput formControlName="course">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Grade</mat-label>
+            <mat-select formControlName="grade" required name="selectGrade">
+              <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
+                {{ grade }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button type="submit" [disabled]="!transcriptForm.valid" mat-raised-button color="primary">Save</button> 
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div fxFlex="49" class="top-margin">
+    <button mat-button color="primary" (click)="clearEntries()">Clear Transcript</button>
+    <mat-card>
+      <mat-card-title>Transcript </mat-card-title>
+      <mat-card-content> 
+        <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div fxLayout="column" class="top-margin">
+  <button mat-button color="primary" (click)="calculateResults()">Calculate GPA</button>
+  <mat-card>
+    <mat-card-title style="text-align: center;">GPA: <app-gpa [gpaTotal]="gpaTotal"></app-gpa></mat-card-title>
+  </mat-card>
+</div>
+

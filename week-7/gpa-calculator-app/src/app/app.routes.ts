@@ -30,7 +30,8 @@ import {
 } from './sign-in.guard';
 
 
-export const routes: Routes = [{
+export const routes: Routes = [
+  {
     path: '',
     component: BaseLayoutComponent,
     children: [{

@@ -1,0 +1,7 @@
+{
+  "userName": "aName",
+  "userEmail": "email@example.com",
+  "userPassword": "saltedPassword",
+  "userZip": "12345",
+  "savedSearches": []
+}

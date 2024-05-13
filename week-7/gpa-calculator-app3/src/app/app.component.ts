@@ -18,6 +18,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { SignInGuard } from './sign-in.guard';
 
 
 

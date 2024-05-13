@@ -1,0 +1,12 @@
+<form fxLayout="column" class="wishlist-create-form">
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title: </mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.title">
+  </mat-form-field>
+  
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Author: </mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+  <button mat-button class="primary" (click)="addItem()" width="200px">Add Book</button>
+</form>

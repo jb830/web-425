@@ -1,0 +1,59 @@
+/*
+============================================
+; Title:  styles.scss 
+; Author: Professor Krasso
+; Date: 19. April, 2024
+; Modified by: Joanna Brumfield
+; Description: Custom Styles
+;===========================================
+*/
+@import 'theme';
+
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.logo {
+  margin-top: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 80%;
+}
+
+.blue {
+  color: #2196F3;
+}
+
+.green {
+  color: #66bb6a;
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: #fff;
+}
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+.card-title-icon {
+  text-align: center;
+}
+
+.mat-icon {
+  padding: 1rem;
+  font-size: 24px;
+  transform: scale(3);
+}
+
+.align-center {
+  text-align: center;
+}
+.accent {
+  background-color: #66BB6A !important;
+}

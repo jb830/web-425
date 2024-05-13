@@ -1,0 +1,24 @@
+<!-- /*
+============================================
+; Title:  book-details-dialog.component.html 
+; Author: Professor Krasso
+; Date: 19. April, 2024
+; Modified by: Joanna Brumfield
+; Description: book-details-dialog
+;===========================================
+*/ -->
+<mat-card class="card-padding">
+  <mat-card-title class="blue align-center">{{ book.title }}</mat-card-title>
+  <mat-card-content>
+    <div>
+      <p>By: {{book.authors}}</p>
+      <p>Description: {{book.description}}</p>
+      <p>Pages: {{book.numOfPages}}</p>
+      <p>ISBN: {{book.isbn}}</p>
+    </div>
+  </mat-card-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" class="accent" matDialogClose="confirm">OK</button>  
+  </mat-dialog-actions>
+</mat-card>
